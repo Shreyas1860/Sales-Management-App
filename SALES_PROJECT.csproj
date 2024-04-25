@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CC3E902-0CF0-4911-90E2-5522696A33D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SALES_PROJECT</RootNamespace>
+    <AssemblyName>SALES_PROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_items.Designer.cs">
+      <DependentUpon>add_items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_details.Designer.cs">
+      <DependentUpon>admin_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="completed_orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="completed_orders.Designer.cs">
+      <DependentUpon>completed_orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="current_orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="current_orders.Designer.cs">
+      <DependentUpon>current_orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_login.Designer.cs">
+      <DependentUpon>customer_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forgot_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgot_password.Designer.cs">
+      <DependentUpon>Forgot_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="item_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="item_details.Designer.cs">
+      <DependentUpon>item_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_history.Designer.cs">
+      <DependentUpon>login_history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notifications.Designer.cs">
+      <DependentUpon>notifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notifications_shipper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notifications_shipper.Designer.cs">
+      <DependentUpon>notifications_shipper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="seller_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seller_details.Designer.cs">
+      <DependentUpon>seller_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seller_item_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seller_item_details.Designer.cs">
+      <DependentUpon>seller_item_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shipper_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shipper_details.Designer.cs">
+      <DependentUpon>shipper_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signup_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup_details.Designer.cs">
+      <DependentUpon>signup_details.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_items.resx">
+      <DependentUpon>add_items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_details.resx">
+      <DependentUpon>admin_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="completed_orders.resx">
+      <DependentUpon>completed_orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="current_orders.resx">
+      <DependentUpon>current_orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_login.resx">
+      <DependentUpon>customer_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgot_password.resx">
+      <DependentUpon>Forgot_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="item_details.resx">
+      <DependentUpon>item_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_history.resx">
+      <DependentUpon>login_history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notifications.resx">
+      <DependentUpon>notifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notifications_shipper.resx">
+      <DependentUpon>notifications_shipper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="seller_details.resx">
+      <DependentUpon>seller_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seller_item_details.resx">
+      <DependentUpon>seller_item_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shipper_details.resx">
+      <DependentUpon>shipper_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup_details.resx">
+      <DependentUpon>signup_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\low_poly_banner_design_1711.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4882066.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48820661.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_12859789-stock-photo-admin-tag.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48820662.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48820663.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_179087574_aXjXMWEtMCpcB7hiOW7gjomzJKz4i1Y8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000_F_179087574_aXjXMWEtMCpcB7hiOW7gjomzJKz4i1Y81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_366310107_VqBk8RzM8gn0xcGLcOxdU6rCt35TvRwH.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_420158804_29BhddREdejn4sk3IaO2ZFW4JXMb0rbs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_420158804_29BhddREdejn4sk3IaO2ZFW4JXMb0rbs1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_420158804_29BhddREdejn4sk3IaO2ZFW4JXMb0rbs2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_420158804_29BhddREdejn4sk3IaO2ZFW4JXMb0rbs3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_366310107_VqBk8RzM8gn0xcGLcOxdU6rCt35TvRwH1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_366310107_VqBk8RzM8gn0xcGLcOxdU6rCt35TvRwH2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_366310107_VqBk8RzM8gn0xcGLcOxdU6rCt35TvRwH3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_366310107_VqBk8RzM8gn0xcGLcOxdU6rCt35TvRwH4.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
